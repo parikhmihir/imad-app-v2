@@ -1,3 +1,4 @@
+ // common packages that helps the server listen to a port
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
