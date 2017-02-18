@@ -21,7 +21,18 @@ var articleone = {
 };
 
 var htmlTemplate= `
-
+    <!DOCTYPE html>
+    <head>
+        <title>${title}</title>
+    </head>
+    <body align="center">
+        <a href="/">Go BACK</a>
+        <h1 aligm="center">
+            ${heading}
+        </h1>
+        ${content}
+    </body>
+</html>
 `
 
 app.get('/', function (req, res) {   // Handling specific URL's
