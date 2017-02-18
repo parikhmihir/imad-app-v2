@@ -8,7 +8,8 @@ app.use(morgan('combined'));
 
 // creating a javascript object
 var articleone = {
-  title:  'Articles'
+  title:  'Articles',
+  heading: 'Article-One',
   content: `
         <p>
             Lal Bahadur Shastri, the former prime minister of India is not much known among the youth of India, since his contributions to the nation are not seen by many.
@@ -17,7 +18,6 @@ var articleone = {
                 While India had to import about five percent of the total foodgrains available in the country in the 1950s, food shortages worsened during the 1960s when two severe drought years led to a sharp increase in import of foodgrains
         </p>
   `
-  
 };
 
 app.get('/', function (req, res) {   // Handling specific URL's
