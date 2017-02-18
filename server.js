@@ -40,7 +40,8 @@ var article={
                There are lot of rumours regarding the mysterious death of Shashtriji in Tashkent in 1966.
             </p>
             <p>
-                    While India had to import about five percent of the total foodgrains available in the country in the 1950s, food shortages worsened during the 1960s when two severe drought years led to a sharp increase in import of foodgrains
+                    It was his simplicity and hard work that brought him to that level to lead the nation toward progress.
+                    Sources and Motivation: A documentary on Zee news.
             </p>
       `
     }
