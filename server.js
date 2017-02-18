@@ -71,7 +71,7 @@ app.get('/', function (req, res) {   // Handling specific URL's
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/Article-one',function (req, res) {
+app.get('/:articleName',function (req, res) { //:articleName converts name into variables,its a property of "express"
      res.send(createTemplate(articleOne));
 });
 
