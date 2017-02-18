@@ -25,10 +25,10 @@ var article={
       heading: 'Article-Two',
       content: `
             <p>
-                Lal Bahadur Shastri, the former prime minister of India is not much known among the youth of India, since his contributions to the nation are not seen by many.
+                He also led the nation to victory in the 1965 war. In all he led the nation towards self-sufficiency by stopping to import agricultural products from other nations and becoming self-reliant in it.
             </p>
             <p>
-                    While India had to import about five percent of the total foodgrains available in the country in the 1950s, food shortages worsened during the 1960s when two severe drought years led to a sharp increase in import of foodgrains
+                    
             </p>
       `
     },
