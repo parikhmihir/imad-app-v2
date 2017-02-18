@@ -74,16 +74,10 @@ app.get('/', function (req, res) {   // Handling specific URL's
 
 app.get('/:articleName',function (req, res) { //:articleName converts name into variables,its a property of "express"
     //articleName==articleOne
-    //articles[articleName]==
+    //articles[articleName]=={}content object of article one.
      res.send(createTemplate(articles[articleName]));
 });
 
-app.get('/Article-two',function (req, res) {
-     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-});
-app.get('/Article-three',function (req, res) {
-     res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
