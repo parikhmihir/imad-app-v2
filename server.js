@@ -28,7 +28,7 @@ var article={
                 He also led the nation to victory in the 1965 war. In all he led the nation towards self-sufficiency by stopping to import agricultural products from other nations and becoming self-reliant in it.
             </p>
             <p>
-                    
+                   After all these efforts, his contributions are not known to many. He shares his birth anniversary with Mahatma Gandhiji, but still many of the citizens are unaware about it.People do remember Mahatma Gandhiji, Pandit Nehruji and Sardar Vallabhai Patelji, but he is still an unsung hero of the nation. He is not as famous as many other leaders, which is really sad. 
             </p>
       `
     },
