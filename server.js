@@ -6,7 +6,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-// creating a javascript object
+// creating a javascript object "articleone"
 var articleone = {
   title:  'Articles',
   heading: 'Article-One',
@@ -19,6 +19,10 @@ var articleone = {
         </p>
   `
 };
+
+var htmlTemplate= `
+
+`
 
 app.get('/', function (req, res) {   // Handling specific URL's
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
