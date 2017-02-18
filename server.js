@@ -7,7 +7,7 @@ var app = express();
 app.use(morgan('combined'));
 
 // creating a javascript object "articleone"
-var articleone = {
+var articleOne = {
   title:  'Articles',
   heading: 'Article-One',
   content: `
@@ -44,7 +44,7 @@ app.get('/', function (req, res) {   // Handling specific URL's
 });
 
 app.get('/Article-one',function (req, res) {
-     res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+     res.send(createTemplate(articleOne));
 });
 app.get('/Article-two',function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
