@@ -46,6 +46,7 @@ app.get('/', function (req, res) {   // Handling specific URL's
 app.get('/Article-one',function (req, res) {
      res.send(createTemplate(articleOne));
 });
+
 app.get('/Article-two',function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
