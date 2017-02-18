@@ -9,7 +9,7 @@ app.use(morgan('combined'));
 // creating a javascript object "articles"
 // articleOne articleTwo articleThree are the array members of object 'articles'
 var article={
-    articleOne: {
+    'article-one': {
       title:  'Articles',
       heading: 'Article-One',
       content: `
@@ -21,7 +21,7 @@ var article={
             </p>
       `
     },
-    articleTwo:{
+    'article-two':{
         title:  'Articles',
       heading: 'Article-Two',
       content: `
@@ -33,7 +33,7 @@ var article={
             </p>
       `
     },
-    articleThree:{
+    'article-three':{
         title:  'Articles',
       heading: 'Article-Three',
       content: `
