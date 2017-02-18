@@ -6,7 +6,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-// creating a javascript object "articleone"
+// creating a javascript object "articles"
+// articleOne articleTwo articleThree are the array members of object 'articles'
 var article={
     articleOne: {
       title:  'Articles',
