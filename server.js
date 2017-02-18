@@ -19,8 +19,11 @@ var articleone = {
         </p>
   `
 };
-
-var htmlTemplate= `
+function createTemplate(data) {
+    var title=data.title;
+    var heading=data.heading;
+    var content=data.content;
+    var htmlTemplate= `
     <!DOCTYPE html>
     <head>
         <title>${title}</title>
@@ -34,6 +37,7 @@ var htmlTemplate= `
     </body>
 </html>
 `
+}
 
 app.get('/', function (req, res) {   // Handling specific URL's
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
