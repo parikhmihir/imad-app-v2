@@ -6,15 +6,24 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+// creating a javascript object
+var articleone = {
+  title:  'Articles'
+  content: `
+        <p>
+            Lal Bahadur Shastri, the former prime minister of India is not much known among the youth of India, since his contributions to the nation are not seen by many.
+        </p>
+        <p>
+                While India had to import about five percent of the total foodgrains available in the country in the 1950s, food shortages worsened during the 1960s when two severe drought years led to a sharp increase in import of foodgrains
+        </p>
+  `
+  
+};
+
 app.get('/', function (req, res) {   // Handling specific URL's
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-// creating a javascript object
-var content{
-  title:  'Articles',
-  heading: 'Article-One'
-  content: ``
-};
+
 app.get('/Article-one',function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
