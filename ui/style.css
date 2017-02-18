@@ -22,3 +22,12 @@
     nav{
         display:block;
     }
+    .container{
+            text-align:center;
+            background-color:grey;
+            border-radius:10px;
+            padding:15px;
+            margin-left:300px;
+            margin-right:300px;
+            margin-top:150px;
+        } 
