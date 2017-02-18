@@ -64,7 +64,7 @@ function createTemplate(data) {
         ${content}
     </body>
 </html>
-`
+`;
 return htmlTemplate;
 }
 
