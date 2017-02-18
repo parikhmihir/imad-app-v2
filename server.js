@@ -9,6 +9,12 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {   // Handling specific URL's
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+// creating a javascript object
+var content{
+  title:  'Articles',
+  heading: 'Article-One'
+  content: ``
+};
 app.get('/Article-one',function (req, res) {
      res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
