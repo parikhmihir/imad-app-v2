@@ -75,6 +75,7 @@ app.get('/', function (req, res) {   // Handling specific URL's
 app.get('/:articleName',function (req, res) { //:articleName converts name into variables,its a property of "express"
     //articleName==articleOne
     //articles[articleName]=={}content object of article one.
+    var articleName=req.params.articleName;
      res.send(createTemplate(articles[articleName]));
 });
 
