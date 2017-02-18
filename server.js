@@ -22,7 +22,19 @@ var article={
     },
     articleTwo:{
         title:  'Articles',
-      heading: 'Article-One',
+      heading: 'Article-Two',
+      content: `
+            <p>
+                Lal Bahadur Shastri, the former prime minister of India is not much known among the youth of India, since his contributions to the nation are not seen by many.
+            </p>
+            <p>
+                    While India had to import about five percent of the total foodgrains available in the country in the 1950s, food shortages worsened during the 1960s when two severe drought years led to a sharp increase in import of foodgrains
+            </p>
+      `
+    },
+    articleThree:{
+        title:  'Articles',
+      heading: 'Article-Three',
       content: `
             <p>
                 Lal Bahadur Shastri, the former prime minister of India is not much known among the youth of India, since his contributions to the nation are not seen by many.
@@ -32,7 +44,7 @@ var article={
             </p>
       `
     }
-}
+};
 function createTemplate(data) {
     var title=data.title;
     var heading=data.heading;
