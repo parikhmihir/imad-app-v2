@@ -68,10 +68,6 @@ function createTemplate(data) {
 return htmlTemplate;
 }
 
-app.get('/', function (req, res) {   // Handling specific URL's
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
-});
-
 app.get('/:articleName',function (req, res) { //:articleName converts name into variables,its a property of "express"
     //articleName==articleOne
     //articles[articleName]=={}content object of article one.
@@ -79,6 +75,9 @@ app.get('/:articleName',function (req, res) { //:articleName converts name into 
      res.send(createTemplate(articles[articleName]));
 });
 
+app.get('/', function (req, res) {   // Handling specific URL's
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+});
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
@@ -88,7 +87,7 @@ app.get('/ui/mihir.jpg', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
-app.get('/ui/profile.html', function (req, res) {   // Handling specific URL's
+app.get('/ui/profile.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
 });
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
