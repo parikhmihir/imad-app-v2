@@ -85,8 +85,11 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/mihir.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'mihir.jpg'));
 });
-app.get('/ui/profile.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
+app.get('/ui/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+});
+app.get('/', function (req, res) {   // Handling specific URL's
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
