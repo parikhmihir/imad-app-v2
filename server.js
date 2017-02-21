@@ -77,9 +77,9 @@ app.get('/:articleName',function (req, res) { //:articleName converts name into 
 
 var counter=0;
 app.get('/', function (req, res) {   // Handling specific URL's
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
   counter=counter+1;
   res.send(counter.toString());
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
