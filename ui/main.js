@@ -7,6 +7,7 @@ button.onclick=function(){
   
   //Capture the response and store it in a variable
   
-  //Render teh variable in correct span
-  
+  //Render the variable in correct span
+  counter=counter+1;
+  span.innerHTML=counter.toString();
 };
