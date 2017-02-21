@@ -67,8 +67,6 @@ function createTemplate(data) {
 `;
 return htmlTemplate;
 }
-
-});
 app.get('/:articleName',function (req, res) { //:articleName converts name into variables,its a property of "express"
     //articleName==articleOne
     //articles[articleName]=={}content object of article one.
