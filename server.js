@@ -92,7 +92,7 @@ app.get('/test-db',function(req,res){ //request to an end point
 app.get('articles/:articleName',function (req, res) { //:articleName converts name into variables,its a property of "express"
     //articleName==articleOne
     //articles[articleName]=={}content object of article one.
-    Pool.query("Select * from articles where title= "+ req.params.articleName, function(err,result){
+    Pool.query("SELECT * FROM articles WHERE title= "+ req.params.articleName +"-", function(err,result){
         if(err){
             res.status(500).send(err.toString());
         }else{
@@ -104,7 +104,6 @@ app.get('articles/:articleName',function (req, res) { //:articleName converts na
         }
         }
     });
-     
 });
 
 app.get('/', function (req, res) {   // Handling specific URL's
