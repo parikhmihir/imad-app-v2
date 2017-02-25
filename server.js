@@ -67,7 +67,7 @@ function createTemplate(data) {
 `;
 return htmlTemplate;
 }
-app.get('/test-db',function(req,res){
+app.get('/test-db',function(req,res){ //request to an end point
    // Make a select request 
    // Make a response with the results
 });
