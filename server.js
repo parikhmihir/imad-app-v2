@@ -85,7 +85,7 @@ app.get('/test-db',function(req,res){ //request to an end point
        }else{
            res.send(JSON.stringify(result));
        }
-   })
+   });
 });
     
 
