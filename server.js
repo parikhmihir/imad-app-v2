@@ -89,21 +89,20 @@ app.get('/test-db',function(req,res){ //request to an end point
 });
     
 
-app.get('articles/:articleName',function (req, res) { //:articleName converts name into variables,its a property of "express"
-    //articleName==articleOne
-    //articles[articleName]=={}content object of article one.
-    Pool.query("SELECT * FROM articles WHERE title= "+ req.params.articleName, function(err,result){
-        if(err){
-            res.status(500).send(err.toString());
+app.get('/articles/:articleName', function (req, res) {
+  // SELECT * FROM article WHERE title = '\'; DELETE WHERE a = \'asdf'
+  pool.query("SELECT * FROM article WHERE title = $1", [req.params.articleName], function (err, result) {
+    if (err) {
+        res.status(500).send(err.toString());
+    } else {
+        if (result.rows.length === 0) {
+            res.status(404).send('Article not found');
         } else {
-            if(result.rows.length===0) {
-                res.status(404).send('Article not found');
-            } else {
-                var articleData=result.rows[0];
-                res.send(createTemplate(articleData));
+            var articleData = result.rows[0];
+            res.send(createTemplate(articleData));
         }
-        }
-    });
+    }
+  });
 });
 
 app.get('/', function (req, res) {   // Handling specific URL's
