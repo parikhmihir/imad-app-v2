@@ -23,6 +23,14 @@
         display:block;
         width:20px;
     }
+    div{
+	text-align: center;
+	margin-top:80px;
+	margin-left: 150px;
+	margin-right: 150px;
+	background-color: grey;
+	border-radius: 8px;
+}
     .container{
             text-align:center;
             background-color:grey;
