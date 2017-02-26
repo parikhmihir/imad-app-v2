@@ -19,18 +19,6 @@
     .img-medium {
         height: 200px;
     }
-    nav{
-        display:block;
-        width:20px;
-    }
-    div{
-	text-align: center;
-	margin-top:80px;
-	margin-left: 150px;
-	margin-right: 150px;
-	background-color: grey;
-	border-radius: 8px;
-}
     .container{
             text-align:center;
             background-color:grey;
@@ -40,4 +28,41 @@
             margin-right:300px;
             margin-top:150px;
         } 
+    div{
+	text-align: center;
+	margin-left: 280px;
+	margin-right: 280px;
+	background-color: grey;
+	border-radius: 8px;
+	padding: 10px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    width: 390px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 40px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+li a:active{
+  background-color: #fff;
+}
+
+
     
