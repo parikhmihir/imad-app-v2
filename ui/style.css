@@ -21,6 +21,7 @@
     }
     nav{
         display:block;
+        width:20px;
     }
     .container{
             text-align:center;
@@ -31,3 +32,4 @@
             margin-right:300px;
             margin-top:150px;
         } 
+    
