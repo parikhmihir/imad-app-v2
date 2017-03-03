@@ -16,7 +16,7 @@ app.use(morgan('combined'));
 // creating a javascript object "articles"
 // articleOne articleTwo articleThree are the array members of object 'articles'
 var articles={
-    /*'article-one': {
+    'article-one': {
       title:  'Articles',
       heading: 'Article-One',
       content: `
@@ -52,7 +52,7 @@ var articles={
                     Sources and Motivation: A documentary on Zee news.
             </p>
       `
-    }*/
+    }
 };
 function createTemplate(data) {
     var title=data.title;
@@ -79,7 +79,7 @@ var Pool=new Pool(config);
 app.get('/test-db',function(req,res){ //request to an end point
    // Make a select request 
    // Make a response with the results
-   Pool.query('SELECt * FROM test', function(err, result){
+   Pool.query('SELECT * FROM test', function(err, result){
        if(err){
            res.status(500).send(err.toString());
        }else{
