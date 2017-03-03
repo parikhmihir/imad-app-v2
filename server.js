@@ -15,7 +15,7 @@ app.use(morgan('combined'));
 
 // creating a javascript object "articles"
 // articleOne articleTwo articleThree are the array members of object 'articles'
-/*var articles={
+var articles={
     'article-one': {
       title:  'Articles',
       heading: 'Article-One',
@@ -53,7 +53,7 @@ app.use(morgan('combined'));
             </p>
       `
     }
-};*/
+};
 function createTemplate(data) {
     var title=data.title;
     var heading=data.heading;
