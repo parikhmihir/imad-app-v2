@@ -90,7 +90,8 @@ app.get('/test-db',function(req,res){ //request to an end point
     
 
 app.get('/articles/:articleName', function (req, res) {
-  Pool.query("SELECT * FROM articles WHERE title = '" + req.params.articleName + "'", function (err, result) {
+  // SELECT * FROM article WHERE title = '\'; DELETE WHERE a = \'asdf'
+  pool.query("SELECT * FROM article WHERE title = $1", [req.params.articleName], function (err, result) {
     if (err) {
         res.status(500).send(err.toString());
     } else {
