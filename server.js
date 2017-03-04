@@ -75,6 +75,10 @@ function createTemplate(data) {
 return htmlTemplate;
 }
 
+app.get('/hash/:input', function(req,res){
+    
+});
+
 var Pool=new Pool(config);
 app.get('/test-db',function(req,res){ //request to an end point
    // Make a select request 
