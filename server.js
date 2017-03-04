@@ -89,6 +89,9 @@ app.get('/hash/:input', function(req,res){
 
 // create a new user
 app.get('/add-user',function(req,res){
+    // Take the input of user and his password
+    var salt=crypto.getRandomBytes(128).toString('hex');  // Salt is a random string
+    var dbString=hash(password,salt);
     
 });
 
