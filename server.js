@@ -92,7 +92,13 @@ app.get('/add-user',function(req,res){
     // Take the input of user and his password
     var salt=crypto.getRandomBytes(128).toString('hex');  // Salt is a random string
     var dbString=hash(password,salt);
-    
+    Pool.query('INSERT INTO "user" (username,password) VALUES($1,$2), [username,dbString]',function(err,result){
+    if(err){
+           res.status(500).send(err.toString());
+       }else{
+           res.send(JSON.stringify(result.rows));
+       }    
+    });
 });
 
 var Pool=new Pool(config);
