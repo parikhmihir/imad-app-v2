@@ -3,7 +3,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool=require('pg').Pool;
-var crpto=require('crypto'); // library for hashing the pasword
+var crypto=require('crypto'); // library for hashing the pasword
 var config={
     user:'parikhmihir',
     database:'parikhmihir',
