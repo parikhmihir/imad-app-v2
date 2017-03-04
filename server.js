@@ -75,6 +75,7 @@ function createTemplate(data) {
 `;
 return htmlTemplate;
 }
+
 // Creating the hashed value of our credentials
 function hash(input,salt){
     var hashed=crypto.pbkdf2(input,salt,10000,512,'sha512');
