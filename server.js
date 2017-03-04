@@ -14,6 +14,7 @@ var config={
 };
 var app = express();
 app.use(morgan('combined'));
+app.use(bodyParser.json());
 
 // creating a javascript object "articles"
 // articleOne articleTwo articleThree are the array members of object 'articles'
