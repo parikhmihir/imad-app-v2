@@ -74,9 +74,14 @@ function createTemplate(data) {
 `;
 return htmlTemplate;
 }
+// Creating the hashed value of our credentials
+function hash(input){
+    
+}
 
 app.get('/hash/:input', function(req,res){
     var hashedString=hash(req.params.input);
+    res.send(hashedString);
 });
 
 var Pool=new Pool(config);
