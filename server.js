@@ -77,7 +77,7 @@ return htmlTemplate;
 }
 // Creating the hashed value of our credentials
 function hash(input){
-    var hashed=crypto.pbkdf2()
+    var hashed=crypto.pbkdf2(input,salt,10000,512,'sha512');
 }
 
 app.get('/hash/:input', function(req,res){
