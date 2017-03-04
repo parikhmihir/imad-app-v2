@@ -88,8 +88,10 @@ app.get('/hash/:input', function(req,res){
 });
 
 // create a new user
-app.get('/add-user',function(req,res){
+app.post('/add-user',function(req,res){
     // Take the input of user and his password
+    var username=req.body.username;
+    var password=req.body.password;
     var salt=crypto.getRandomBytes(128).toString('hex');  // Salt is a random string
     var dbString=hash(password,salt);
     Pool.query('INSERT INTO "user" (username,password) VALUES($1,$2), [username,dbString]',function(err,result){
