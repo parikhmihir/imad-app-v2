@@ -4,6 +4,7 @@ var morgan = require('morgan');
 var path = require('path');
 var Pool=require('pg').Pool;
 var crypto=require('crypto'); // library for hashing the pasword
+var bodyParser=require('body-parser');
 var config={
     user:'parikhmihir',
     database:'parikhmihir',
