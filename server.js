@@ -76,7 +76,7 @@ return htmlTemplate;
 }
 
 app.get('/hash/:input', function(req,res){
-    
+    var hashedString=hash(req.params.input);
 });
 
 var Pool=new Pool(config);
