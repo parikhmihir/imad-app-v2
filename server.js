@@ -81,7 +81,7 @@ return htmlTemplate;
 // Creating the hashed value of our credentials
 function hash(input,salt){
     var hashed=crypto.pbkdf2Sync(input,salt,10000,512,'sha512');
-    return hashed.toString('hex');
+    return [pbkdf2,salt,hashed.toStrting('hex')].join('$');
 }
 
 app.get('/hash/:input', function(req,res){
