@@ -8,18 +8,12 @@ submit.onclick = function () {
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
               if (request.status === 200) {
-                  submit.value = 'Sucess!';
-              } else if (request.status === 403) {
-                  submit.value = 'Invalid credentials. Try again?';
-              } else if (request.status === 500) {
-                  alert('Something went wrong on the server');
-                  submit.value = 'Login';
-              } else {
-                  alert('Something went wrong on the server');
-                  submit.value = 'Login';
-              }
-              loadLogin();
-          }  
+                console.log('User Logged in...');
+                alert('Logged in successfully');
+          }
+          else (request.status===403){
+              alert('Username/password is incorrect');
+        }
           // Not done yet
         };
         
