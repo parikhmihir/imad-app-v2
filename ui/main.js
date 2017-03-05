@@ -1,4 +1,4 @@
-var submit=document.getElementByID('login_btn');
+var submit=document.getElementById('login_btn');
 submit.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
