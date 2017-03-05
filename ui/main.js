@@ -1,4 +1,4 @@
-var submit=document.getElementByID('submit').value;
+var submit=document.getElementByID('submit');
 submit.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
@@ -24,7 +24,7 @@ submit.onclick = function () {
         var password = document.getElementById('password').value;
         console.log(username);
         console.log(password);
-        request.open('POST', 'http://parikhmihir.imad.hasura-app.io/login', true);
+        request.open('POST', '/login', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
         submit.value = 'Logging in...';
