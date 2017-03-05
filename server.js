@@ -119,7 +119,7 @@ app.post('/login',function(req,res){
            else{
                // Match the password
                var dbString=result.rows[0].password;
-               
+               var salt=dbString.split('$')[2];
                res.send('User successfully created'+username);
            }
        }    
