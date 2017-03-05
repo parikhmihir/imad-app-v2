@@ -120,7 +120,13 @@ app.post('/login',function(req,res){
                // Match the password
                var dbString=result.rows[0].password;
                var salt=dbString.split('$')[2];
-               res.send('User successfully created'+username);
+               var hashedPassword=hash(password,salt);
+               if(hashedPassword===dbString){
+               res.send(' Successful Login for '+username);
+               }
+               else{
+                   res.send(403).send('Username/Password is invalid ');
+               }
            }
        }    
     });
