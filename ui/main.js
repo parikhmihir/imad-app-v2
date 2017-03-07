@@ -15,11 +15,8 @@
               } else if (request.status === 500) {
                   alert('Something went wrong on the server');
                   submit.value = 'Login';
-              } else {
-                  alert('Something went wrong on the server');
-                  submit.value = 'Login';
               }
-          }  
+          }
           // Not done yet
         };
         
