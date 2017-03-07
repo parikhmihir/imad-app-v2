@@ -1,5 +1,5 @@
-var submit=document.getElementById('submit');
 function login(){
+    var submit=document.getElementById('submit');
 submit.onclick = function () {
         // Create a request object
         var request = new XMLHttpRequest();
