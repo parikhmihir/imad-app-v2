@@ -1,4 +1,4 @@
-function login(){
+function login1(){
     var submit=document.getElementById('submit');
         submit.onclick = function () {
         // Create a request object
