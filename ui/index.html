@@ -1,22 +1,31 @@
 <!doctype html>
 <html>
     <head>
-         <meta name="viewport" device="width:device-width" initial-scale="1"/>
-        <link href="/ui/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-         <ul>
-	    	<li><a href="/">HOME</a></li>
-		    <li><a href="/ui/profile.html">PROFILE</a></li>
-		    <li><a href="/ui/articles.html">ARTICLES</a></li>
-    	</ul>
-
-        <br/>
-        <div class="center text-big bold" id="message">
-            Read some positive articles here...
-            Will be published soon...
-       <div id="login_area">
-                <center>Loading login status...</center>
+        <nav>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="blog">Blog</a>
+          </li>
+          <li>
+            <a href="about">About Me</a>
+          </li>
+          <li>
+            <a href="contact">Contact Me</a>
+          </li>
+          <li>
+            <a href="login">Login/Register</a>
+          </li>
+        </ul>
+        </nav>
+        <div class="container">
+            <div id="login_area">
+            <center>Loading login status...</center>
             </div>
             <hr/>
             <h3>My Articles</h3>
@@ -28,5 +37,5 @@
         </div>
         <script type="text/javascript" src="/ui/main.js">
         </script>
-	</body>
+    </body>
 </html>
