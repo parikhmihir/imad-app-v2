@@ -1,9 +1,8 @@
-
 function loadLoginForm () {
     var loginHtml = `
-        <h3>Login/Register to unlock awesome features</h3>
-        <input type="text" id="username" placeholder="username" />
-        <input type="password" id="password" />
+        <h1>Login/Register on Techniqed!</h1>
+        Enter your Username:<input type="text" id="username" placeholder="Enter Username" required /><br/><br/>
+        Enter Password:<input type="password" id="password" required /><br/>
         <br/><br/>
         <input type="submit" id="login_btn" value="Login" />
         <input type="submit" id="register_btn" value="Register" />
@@ -50,6 +49,10 @@ function loadLoginForm () {
     
     var register = document.getElementById('register_btn');
     register.onclick = function () {
+        if((document.getElementById('username').value.length===0 || document.getElementById('password').value.lenghth===0)){
+            alert("Empty form cannot be submitted. Please fill the form properly to continue.");
+            return false;
+        }
         // Create a request object
         var request = new XMLHttpRequest();
         
@@ -66,7 +69,6 @@ function loadLoginForm () {
               }
           }
         };
-        
         // Make the request
         var username = document.getElementById('username').value;
         var password = document.getElementById('password').value;
@@ -119,10 +121,10 @@ function loadArticles () {
                     <a href="/articles/${articleData[i].title}">${articleData[i].heading}</a>
                     (${articleData[i].date.split('T')[0]})</li>`;
                 }
-                content += "</ul>"
+                content += "</ul>";
                 articles.innerHTML = content;
             } else {
-                articles.innerHTML('Oops! Could not load all articles!')
+                articles.innerHTML='Oops! Could not load all articles!';
             }
         }
     };
