@@ -1,65 +1,46 @@
-    body {
-        font-family: sans-serif;
-        background-color: lightgrey;
-        margin-top: 75px;
-    }
-    
-    .center {
-        text-align: center;
-    }
-    
-    .text-big {
-        font-size: 300%;
-    }
-    
-    .bold {
-        font-weight: bold;
-    }
-    
-    .img-medium {
-        height: 200px;
-    }
-    .container{
-            text-align:center;
-            background-color:grey;
-            border-radius:10px;
-            padding:15px;
-            margin-left:300px;
-            margin-right:300px;
-            margin-top:150px;
-        } 
-    div{
-	text-align: center;
-	margin-left: 280px;
-	margin-right: 280px;
-	background-color: grey;
-	border-radius: 8px;
-	padding: 10px;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+body {
+    font-family: sans-serif;
+    margin-top: 60px;
 }
 
-li {
-    float: left;
-    width: 390px;
-}
-
-li a {
-    display: block;
-    color: white;
+.center {
     text-align: center;
-    padding: 30px 40px;
-    text-decoration: none;
 }
 
-li a:hover {
-    background-color: #111;
+.text-big {
+    font-size: 300%;
 }
-li a:active{
-  background-color: #fff;
+
+.bold {
+    font-weight: bold;
+}
+
+.img-medium {
+    height: 200px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #4a4a4a;
+    font-family: sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.comment {
+    margin-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.commenter {
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+#comment_form {
+    margin-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
 }
