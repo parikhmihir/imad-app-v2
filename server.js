@@ -202,7 +202,7 @@ app.post('/submit-comment/:articleName', function (req, res) {
                             if (err) {
                                 res.status(500).send(err.toString());
                             } else {
-                                res.status(200).send('Comment inserted!')
+                                res.status(200).send('Comment inserted!');
                             }
                         });
                 }
@@ -214,7 +214,7 @@ app.post('/submit-comment/:articleName', function (req, res) {
 });
 
 
-app.get('/test-db',function(req,res){ //request to an end point
+/*app.get('/test-db',function(req,res){ //request to an end point
    // Make a select request 
    // Make a response with the results
    Pool.query('SELECT * FROM test', function(err, result){
@@ -224,7 +224,7 @@ app.get('/test-db',function(req,res){ //request to an end point
            res.send('User successfully created'+username);
        }
    });
-});
+});*/
     
 
 app.get('/articles/:articleName', function (req, res) {
