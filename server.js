@@ -94,7 +94,6 @@ app.get('/hash/:input', function(req,res){
     res.send(hashedString);
 });
 
-var Pool=new Pool(config);
 // create a new user
 app.post('/add-user',function(req,res){
     // Take the input of user and his password
@@ -111,7 +110,6 @@ app.post('/add-user',function(req,res){
     });
 });
 
-var Pool=new Pool(config);
 // Logging in the user
 app.post('/login', function (req, res) {
    var username = req.body.username;
@@ -146,7 +144,6 @@ app.post('/login', function (req, res) {
    });
 });
 
-var Pool=new Pool(config);
 app.get('/check-login', function (req, res) {
    if (req.session && req.session.auth && req.session.auth.userId) {
        // Load the user object
