@@ -95,19 +95,21 @@ app.get('/hash/:input', function(req,res){
 });
 
 // create a new user
-app.post('/add-user',function(req,res){
-    // Take the input of user and his password
-    var username=req.body.username;
-    var password=req.body.password;
-    var salt=crypto.randomBytes(128).toString('hex');  // Salt is a random string
-    var dbString=hash(password,salt);
-     Pool.query('INSERT INTO "user" (username, password) VALUES ($1, $2)', [username, dbString], function (err, result) {
-    if(err){
-           res.status(500).send(err.toString());
-       }else{
-           res.send(JSON.stringify(result.rows));
-       }    
-    });
+app.post('/create-user', function (req, res) {
+// username, password
+// {"username": "tanmai", "password": "password"}
+// JSON
+var username = req.body.username;
+var password = req.body.password;
+var salt = crypto.randomBytes(128).toString('hex');
+var dbString = hash(password, salt);
+Pool.query('INSERT INTO "user" (username, password) VALUES ($1, $2)', [username, dbString], function (err, result) {
+if (err) {
+res.status(500).send(err.toString());
+} else {
+res.send('User successfully created: ' + username);
+}
+});
 });
 
 // Logging in the user
