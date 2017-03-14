@@ -13,7 +13,7 @@ function loadLoginForm () {
         </tr>
         <tr>
         <td><input type="submit" id="login_btn" value="Login" /></td>
-        <td<input type="submit" id="register_btn" value="Register" /></td>
+        <td><input type="submit" id="register_btn" value="Register" /></td>
         </tr>
         </table>
         `;
