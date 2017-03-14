@@ -4,11 +4,11 @@ function loadLoginForm () {
         <h3>Login/Register to access the articles</h3>
         <table>
         <tr>
-        <th>Username</th>
+        <td>Username</td>
         <td><input type="text" id="username" placeholder="Enter the username" /></td>
         </tr>
         <tr>
-        <th>Password</th>
+        <td>Password</td>
         <td><input type="password" id="password" placeholder="Enter the password" /></td>
         </tr>
         <tr>
