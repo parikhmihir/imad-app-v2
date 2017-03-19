@@ -14,6 +14,7 @@ function loadLoginForm () {
                 <tr>
                     <td><input type="submit" id="login_btn" value="Login" /></td>
                     <td><input type="submit" id="register_btn" value="Register" /></td>
+                    <td><input type="reset" value="Register" /></td>
                 </tr>
         </table>
         `;
