@@ -71,3 +71,6 @@ li a:hover {
 #right{
     float:right;
 }
+table,td{
+    align:center;
+}
