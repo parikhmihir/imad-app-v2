@@ -1,7 +1,7 @@
 
 function loadLoginForm () {
     var loginHtml = `
-        <h3>Login/Register to access the articles</h3>
+        <h3>Login/Register to acces the articles</h3>
             <table>
                 <tr>
                     <td>Username</td>
@@ -14,7 +14,7 @@ function loadLoginForm () {
                 <tr>
                     <td><input type="submit" id="login_btn" value="Login" /></td>
                     <td><input type="submit" id="register_btn" value="Register" /></td>
-                    <td><input type="reset" value="Register" /></td>
+                    <td><input type="reset" value="reset" /></td>
                 </tr>
         </table>
         `;
