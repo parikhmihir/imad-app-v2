@@ -20,7 +20,7 @@ function loadLoginForm () {
                 <tr>
                     <td colspan="2"><input type="reset" value="reset" /></td>
                 </tr>
-        </table>
+            </table>
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
     
