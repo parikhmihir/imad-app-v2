@@ -1,7 +1,7 @@
 body{
     font-family: sans-serif;
     margin-top: 40px;
-    background-image:url(/ui/positivequote1.jpg);
+    background-image:url('ui/positivequote1.jpg');
     background-repeat:no-repeat;
 }
 
