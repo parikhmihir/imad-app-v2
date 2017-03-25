@@ -1,8 +1,8 @@
 
 function loadLoginForm () {
     var loginHtml = `
-        <h3>Login/Register to acces the articles</h3>
-            <table>
+        <h3 align="center">Login/Register to acces the articles</h3>
+            <table align="center">
                 <tr>
                     <td>Username</td>
                     <td><input type="text" id="username" placeholder="Enter the username" /></td>
@@ -18,7 +18,7 @@ function loadLoginForm () {
                     <td colspan="2"><input type="submit" id="register_btn" value="Register" /></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="reset" value="reset" /></td>
+                    <td colspan="2"><input type="reset" value="Reset" /></td>
                 </tr>
             </table>
         `;
