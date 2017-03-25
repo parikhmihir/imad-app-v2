@@ -12,13 +12,13 @@ function loadLoginForm () {
                     <td><input type="password" id="password" placeholder="Enter the password" /></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="submit" id="login_btn" value="Login" /></td>
+                    <td colspan="2" align="center"><input type="submit" id="login_btn" value="Login" /></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="submit" id="register_btn" value="Register" /></td>
+                    <td colspan="2" align="center"><input type="submit" id="register_btn" value="Register" /></td>
                 </tr>
-                <tr>
-                    <td colspan="2"><input type="reset" value="Reset" /></td>
+               <tr>
+                    <td colspan="2" align="center"><input type="reset" value="Reset" /></td>
                 </tr>
             </table>
         `;
