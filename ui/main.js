@@ -1,4 +1,3 @@
-
 function loadLoginForm () {
     var loginHtml = `
         <h3 align="center">Login/Register to acces the articles</h3>
