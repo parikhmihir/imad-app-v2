@@ -263,6 +263,9 @@ app.get('/ui/mihir.jpg', function (req, res) {
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
+app.get('/ui/positivequote1.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'positivequote1.jpg'));
+});
 app.get('/ui/profile.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'profile.html'));
 });
