@@ -102,6 +102,7 @@ function loadLoggedInUser (username) {
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
     <body>
+    <p align="right">Welcome ${username}</p>
          <ul>
 	    	<li class="navbar"><a href="/">HOME</a></li>
 		    <li class="navbar"><a href="/ui/profile.html">PROFILE</a></li>
