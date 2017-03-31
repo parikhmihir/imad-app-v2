@@ -107,7 +107,6 @@ function loadLoggedInUser (username) {
 	    	<li class="navbar"><a href="/">HOME</a></li>
 		    <li class="navbar"><a href="/ui/profile.html">PROFILE</a></li>
 		    <li class="navbar"><a href="/ui/articles.html">ARTICLES</a></li>
-            <li><font color="white">Welcome ${username}</font></li>
             <li id="right" class="navbar"><a href="/ui/register.html">LOGIN/REGISTER</a></li>
             <li><a href="/logout">LOGOUT</a></li>
         </ul>
